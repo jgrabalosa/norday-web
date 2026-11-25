@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Norday · Hábitos con Nori</title>
+<meta name="description" content="Norday hace apps tranquilas para llevar tus hábitos, con ideas de libros y con Nori, una mascota que crece contigo. Norday Habits ya está en Google Play.">
+<meta name="theme-color" content="#FFFCF5">
+<link rel="icon" href="img/icono-192.png">
+<link rel="stylesheet" href="css/sitio.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","@id":"https://norday.app/#norday","name":"Norday","url":"https://norday.app/","logo":"https://norday.app/img/simbolo.png","email":"hola@norday.app","founder":{"@type":"Person","name":"Joaquim Grabalosa","alternateName":"Quim"},"sameAs":["https://www.instagram.com/nordayapp/","https://www.threads.net/@nordayapp","https://www.tiktok.com/@nordayapp","https://www.youtube.com/@nordayapp"]},
+ {"@type":"MobileApplication","name":"Norday Habits","operatingSystem":"Android","applicationCategory":"HealthApplication","inLanguage":["es","en","pt"],"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"installUrl":"https://play.google.com/store/apps/details?id=com.norday.habitos","publisher":{"@id":"https://norday.app/#norday"}}
+]}
+</script>
+</head>
+<body>
+<header class="cab">
+  <a class="marca" href="index.html"><img src="img/simbolo.png" alt="">Norday</a>
+  <button class="abre" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+  <ul class="menu" id="menu">
+    <li><a href="habits.html">Norday Habits</a></li>
+    <li><a href="apps.html">Lo que viene</a></li>
+    <li><a href="ideas.html">Ideas</a></li>
+    <li><a href="prensa.html">Prensa</a></li>
+  </ul>
+  <a class="btn" href="https://norday.app/web">Descargar</a>
+</header>
+
+<main>
+  <section class="crece" aria-label="Nori crece contigo">
+    <div class="escenario">
+      <div class="lienzo" id="lienzo" aria-hidden="true">
+        <div class="fase huevo nori vivo ve" data-fase="0"><img src="img/nori-huevo-sonriente.webp" alt=""></div>
+        <div class="fase cria nori vivo" data-fase="2"><img src="img/nori-cria-sonriente.webp" alt=""></div>
+        <div class="fase adulto nori vivo" data-fase="3"><img src="img/nori-adulto-sonriente.webp" alt=""></div>
+        <canvas id="rive" width="660" height="880"></canvas>
+        <span class="suelo"></span>
+        <i class="chispa"></i><i class="chispa"></i>
+        <i class="chispa"></i><i class="chispa"></i>
+        <i class="chispa"></i><i class="chispa"></i>
+      </div>
+    </div>
+
+    <div class="pasos">
+      <div class="paso" data-paso="0">
+        <h1>Hábitos sin presión, <span class="verde">con ideas de libros.</span></h1>
+        <p>Norday hace apps tranquilas para llevar tus hábitos. Sin rachas que se rompen y sin culpa. Y con Nori, una mascota que crece contigo.</p>
+        <div class="acciones">
+          <a class="insignia" href="https://norday.app/web"><img src="img/insignia-play-es.svg" alt="Disponible en Google Play"></a>
+          <a class="enlace" href="habits.html">Conoce Norday Habits</a>
+        </div>
+        <p class="pista"><span>↓</span> Baja despacio: Nori está a punto de nacer.</p>
+      </div>
+      <div class="paso" data-paso="1">
+        <p class="fase-txt">Día 1</p>
+        <h2>Al principio, Nori es un huevo.</h2>
+        <p>Cada hábito que marcas le da experiencia. Se marca con un toque y, si te equivocas, con otro se deshace.</p>
+      </div>
+      <div class="paso" data-paso="2">
+        <p class="fase-txt">Unas semanas después</p>
+        <h2>Y un día sale del cascarón.</h2>
+        <p>Si un día no llegas, no se rompe nada. Tu ritmo baja poco a poco y Nori te espera.</p>
+      </div>
+      <div class="paso" data-paso="3">
+        <p class="fase-txt">Contigo</p>
+        <h2>Crece contigo.</h2>
+        <p>Mueve el ratón o el dedo: te está mirando. Si lo dejas tranquilo un rato, se queda dormido.</p>
+        <div class="acciones"><a class="btn" href="habits.html">Ver cómo funciona</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band noche" aria-labelledby="t-apps">
+    <div class="cont">
+      <div class="cabeza">
+        <h2 id="t-apps">Una familia de apps, con el mismo Nori.</h2>
+        <p>Cada app de Norday hace una sola cosa, y la hace sin prisas. Nori te acompaña en todas.</p>
+      </div>
+      <div class="rejilla">
+        <article class="tarjeta">
+          <div class="nori vivo"><img src="img/nori-cria-exultante.webp" alt="Nori cría, contento"></div>
+          <span class="etq">En Google Play</span>
+          <h3>Norday Habits</h3>
+          <p>Marca lo que has hecho hoy y ya está. Constancia, no perfección.</p>
+          <a class="enlace" href="habits.html">Conócela</a>
+        </article>
+        <article class="tarjeta">
+          <div class="nori vivo huevo"><img src="img/nori-huevo-dormido.webp" alt="Nori huevo, dormido"></div>
+          <span class="etq luego">En camino</span>
+          <h3>Norday Focus</h3>
+          <p>Para concentrarte sin pelearte con el móvil. Todavía está en el huevo.</p>
+          <a class="enlace" href="apps.html#focus">Apúntate al club fundador</a>
+        </article>
+        <article class="tarjeta">
+          <div class="nori vivo huevo"><img src="img/nori-huevo-sonriente.webp" alt="Nori huevo, sonriente"></div>
+          <span class="etq luego">Más adelante</span>
+          <h3>Una app de ideas</h3>
+          <p>Las ideas de los libros, de una en una y fáciles de llevar a tu día.</p>
+          <a class="enlace" href="apps.html#ideas-app">Saber más</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="t-por">
+    <div class="cont dos">
+      <div>
+        <h2 id="t-por">Constancia, <span class="verde">no perfección.</span></h2>
+        <p>Casi todas las apps de hábitos castigan el día que fallas: la racha a cero, el rojo, el aviso. Norday parte de lo que cuentan los libros sobre hábitos: lo que se queda es lo que repites, no lo que haces perfecto.</p>
+        <p>Por eso aquí no hay rachas que se rompan. Si te vas unos días, Nori se pone triste; cuando vuelves, se alegra. Nada más.</p>
+      </div>
+      <div class="antes-despues">
+        <figure><div class="nori vivo"><img src="img/nori-cria-triste.webp" alt="Nori triste"></div><figcaption>Si te vas unos días</figcaption></figure>
+        <span class="flecha" aria-hidden="true">→</span>
+        <figure><div class="nori vivo"><img src="img/nori-cria-exultante.webp" alt="Nori contento"></div><figcaption>Cuando vuelves</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band papel2" aria-labelledby="t-ideas">
+    <div class="cont">
+      <div class="cabeza">
+        <h2 id="t-ideas">Ideas de libros, cada semana.</h2>
+        <p>Nori lee libros de hábitos y lo cuenta fácil en las redes: un carrusel, una infografía, una lámina y una historieta.</p>
+      </div>
+      <div class="galeria">
+        <figure class="pieza"><img src="img/idea-arrancar.webp" alt="Carrusel: cómo arrancar lo que evitas en 3 pasos" loading="lazy"><figcaption><b>Cómo arrancar lo que evitas</b>Cinco minutos y permiso para parar.</figcaption></figure>
+        <figure class="pieza"><img src="img/idea-quien.webp" alt="Infografía: funciona más empezar por quién quieres ser" loading="lazy"><figcaption><b>Empieza por quién quieres ser</b>De «Hábitos atómicos», de James Clear.</figcaption></figure>
+        <figure class="pieza"><img src="img/idea-capitulo.webp" alt="Historieta: Nori dormido con un libro, «Iba a leer un capítulo más»" loading="lazy"><figcaption><b>«Iba a leer un capítulo más.»</b>La historieta de los sábados.</figcaption></figure>
+        <figure class="pieza"><img src="img/idea-rindes.webp" alt="Carrusel: ¿por qué te rindes al primer suspenso?" loading="lazy"><figcaption><b>¿Por qué te rindes al primer suspenso?</b>Lo que propone Carol Dweck.</figcaption></figure>
+      </div>
+      <p class="mas"><a class="enlace" href="ideas.html">Ver todas las ideas</a></p>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="t-quim">
+    <div class="cont quim">
+      <div class="nori vivo"><img src="img/nori-adulto-sonriente.webp" alt="Nori adulto"></div>
+      <div>
+        <h2 id="t-quim">La hace una persona, no una empresa.</h2>
+        <p>Soy Quim. Hice Norday Habits después de dejar cuatro apps de hábitos que me recordaban cada racha rota. Quería una que me acompañara sin reñirme. Cuento cómo la construyo en LinkedIn y leo todos los correos.</p>
+        <div class="acciones">
+          <a class="enlace" href="https://www.linkedin.com/in/labibliotecadequim/">Quim en LinkedIn</a>
+          <span class="nota">Escríbeme: hola@norday.app</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band papel2 final" aria-labelledby="t-fin">
+    <div class="nori vivo" data-celebra><img src="img/nori-cria-sonriente.webp" data-alt="img/nori-cria-exultante.webp" alt="Nori"></div>
+    <h2 id="t-fin">Empieza con un hábito pequeño.</h2>
+    <p>Norday Habits es gratis, sin anuncios y sin compras. Para Android.</p>
+    <div class="acciones">
+      <a class="insignia" href="https://norday.app/web" data-celebra-btn><img src="img/insignia-play-es.svg" alt="Disponible en Google Play"></a>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="cols">
+    <div><a class="marca" href="index.html"><img src="img/simbolo.png" alt="">Norday</a><p style="margin-top:12px">Hábitos sin presión, con ideas de libros y con Nori.</p></div>
+    <div><h3>Apps</h3><ul><li><a href="habits.html">Norday Habits</a></li><li><a href="apps.html">Lo que viene</a></li></ul></div>
+    <div><h3>Norday</h3><ul><li><a href="ideas.html">Ideas</a></li><li><a href="prensa.html">Prensa</a></li><li><a href="https://norday.app/privacidad.html">Privacidad</a></li><li><a href="https://norday.app/eliminar-cuenta.html">Borrar cuenta</a></li></ul></div>
+    <div><h3>Síguenos</h3><ul><li><a href="https://www.instagram.com/nordayapp/">Instagram</a></li><li><a href="https://www.threads.net/@nordayapp">Threads</a></li><li><a href="https://www.tiktok.com/@nordayapp">TikTok</a></li><li><a href="https://www.youtube.com/@nordayapp">YouTube</a></li></ul></div>
+  </div>
+  <div class="ultima"><span>Hecha por Joaquim Grabalosa · hola@norday.app</span><span>¡Todo hecho por hoy! Disfruta el resto del día.</span></div>
+</footer>
+<script src="js/sitio.js"></script>
+<script src="rive.js"></script>
+<script src="nori-riv.js"></script>
+<script src="js/crece.js"></script>
+</body>
+</html>
