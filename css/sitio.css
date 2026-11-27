@@ -203,3 +203,28 @@ input[type=text],input[type=email],select{font:500 16px Quicksand,system-ui,sans
 .datos{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 18px;margin:0;font-size:16px}
 .datos dt{font-weight:700}.datos dd{margin:0;color:var(--soft)}
 .noche .sellos li{background:rgba(255,255,255,.08)}
+
+/* T-094: lo que antes iba en atributos style="…" de las páginas (la CSP, style-src sin 'unsafe-inline', los ignora).
+   Mismo resultado que en línea: cada regla gana a las de arriba que tocan lo mismo. */
+.pie .lema{margin-top:12px}
+.nori.alto-300{height:300px}
+.nori.alto-320{height:320px}
+.sellos.sin-margen{margin:0}
+.cont.estrecho{max-width:820px}
+p.frase-grande{font:400 26px/1.25 "Patrick Hand SC",sans-serif}
+.pieza img.contener{object-fit:contain;padding:20px}
+.pieza img.contener.fino{padding:12px}
+.pieza img.fondo-noche{background:#0A1628}
+/* Los colores de cada identidad, en sus muestras (habits.html) */
+.id-cielo .swatch i:nth-child(1){background:#070D19}
+.id-cielo .swatch i:nth-child(2){background:#1E2E4C}
+.id-cielo .swatch i:nth-child(3){background:#27C76F}
+.id-cielo .swatch i:nth-child(4){background:#FFB020}
+.id-neon .swatch i:nth-child(1){background:#090614}
+.id-neon .swatch i:nth-child(2){background:#FF2E88}
+.id-neon .swatch i:nth-child(3){background:#00E5FF}
+.id-neon .swatch i:nth-child(4){background:#FFE347}
+.id-dulce .swatch i:nth-child(1){background:#FFFCF5}
+.id-dulce .swatch i:nth-child(2){background:#FF6FA5}
+.id-dulce .swatch i:nth-child(3){background:#E53F80}
+.id-dulce .swatch i:nth-child(4){background:#4A2E3D}
