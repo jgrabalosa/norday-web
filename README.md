@@ -14,6 +14,19 @@ python3 -m http.server 8000
 en la raíz del repo, y abrir `http://localhost:8000/`. Con `file://` no
 funciona: el `.wasm` de Rive no carga.
 
+## Antes de subir un cambio
+
+```
+python3 tools/comprobar.py
+```
+
+en la raíz del repo. Comprueba que las páginas de la raíz no llevan nada en
+línea que la CSP estricta de Caddy bloquearía: atributos `style="…"`, bloques
+`<style>`, `<script>` sin `src` (salvo el JSON-LD), atributos de evento
+(`onclick`…) ni enlaces `javascript:`. Si sale `MAL`, dice la página y la línea;
+el estilo va a una clase de `css/sitio.css` y el código a un `.js`. Las pruebas
+del propio comprobador: `python3 -m unittest discover -s tools`.
+
 ## Las páginas
 
 | Página | Qué es |
